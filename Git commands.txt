@@ -1,7 +1,7 @@
-setting user.name of repo
+setting user.name of local repo
 	git config --global user.name {username}
 
-setting user.name of repo
+setting user.name of local repo
 	git config --global user.email {useremail}
 
 to show the variables of gitr
@@ -23,7 +23,10 @@ tracking an file:
 	<command> git add  {filenames if tomany space seperated}
 		adding files to track filewise
 	<command> git add .
-		if want all file in that local repo
+		 if want all file in that local repo
+to turn off tracking of file:
+	<command>git restore --staged "{file name}"
+		this will remove file from tracking 
 
 to know the status:
 	<command> git status

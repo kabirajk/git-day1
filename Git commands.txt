@@ -1,0 +1,87 @@
+setting user.name of repo
+	git config --global user.name {username}
+
+setting user.name of repo
+	git config --global user.email {useremail}
+
+to show the variables of gitr
+	git config -l/--list
+
+Local repo creation:
+	New:
+	<command> git int
+	work:makes a local repo for fresh projects
+	Existing:
+	<command> git clone {repo url}
+	if you need to make from github repo
+
+linking local repo to github repo(remote repo):	
+	<command> git remote add origin {repo url}
+	this will link the repo url to remote.origin.url={repo url}
+
+tracking an file:
+	<command> git add  {filenames if tomany space seperated}
+		adding files to track filewise
+	<command> git add .
+		if want all file in that local repo
+
+to know the status:
+	<command> git status
+	if not staged <command> git add {not staged file}
+
+branch: https://www.freecodecamp.org/news/git-switch-branch/
+list branches:
+	<command> git branch 
+to set branch:
+	<command>git branch -m {branch name} 
+		to change name of current branch
+to add new branch:
+	<command> git branch {branch name}
+		bnew branch creation
+to change branch:
+	<command> git switch {branch name}
+check the tracing of branch:
+	<command> git branch -vv
+	show details with last commit
+
+
+commiting:
+to commit changes:
+	<command> git commit -m "{meassege}"
+	note:uncommited ones are not get pushed into repo
+	
+push to remote repo:
+	<command> git push {repo url/origin} {branch}
+	<command> git push origin {main/master}
+
+
+
+1."git init" makes a local repo  or "git clone {url}" this clone the github repo locally
+or 
+1.'git remote add origin "https://github.com/kabirajk/git-bassics.git"'
+	needs a local to link make it by using git init
+	 connects local repo to the mentioned repo "name is not matter if it is different"
+2."git add {file name.extension file name }" add the files or "git add ." add every files in the folder
+3."git status" shows the status of each and every files
+4.'git commit -m "meassege text"' this commits the files which are modified
+	note:uncommited ones are not get pushed into repo
+
+  "git branch {new branch name} to create a new branch
+  "git switch {branch name}" to switch to a branch
+5 "git branch -M main" to set the branch name of the repo
+6."git push -u origin main" push the commited changes to repo to the branch "main"
+   git push -u origin=={url of repo} {branch}
+7."git rm" removes files
+
+
+(this happens when the upstream is not defined for the branch use once git push -u origin {branch})#https://www.geeksforgeeks.org/how-to-set-upstream-branch-on-git/
+When the current branch i.e (‘new_branch’) has no Upstream branch set and we try to run the command “Git push”. After running the below command in cmd:
+	git push
+
+Now, you need to set the upstream branch using the Git push command with the -u option.  Replace <branch name> with your branch name.
+
+	<commdand> git push -u origin <branch name>
+ Alternatively, you can use the ‘–set-upstream’ command as well to set the Upstream branch
+	<command> git push --set-upstream origin <branch name>
+
+ 

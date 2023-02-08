@@ -7,6 +7,19 @@ setting user.name of local repo
 
 to show the variables of gitr
 	git config -l/--list
+	
+git branch <branch_name> <commit-hash>
+
+git branch delete: 
+	git checkout master
+	git branch -d fun_feature
+	git push origin --delete fun_feature
+	
+git Branch name change: 
+	git branch -m bugfix
+	git push origin --delete bogfix
+	git push origin -u bugfix
+ 
 
 Local repo creation:
 	New:

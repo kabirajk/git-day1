@@ -5,10 +5,11 @@ setting user.name of local repo
 setting user.name of local repo
 	git config --global user.email {useremail}
 
-to show the variables of gitr
+to show the variables of git
 	git config -l/--list
 	
-git branch <branch_name> <commit-hash>
+Create the branch using a commit hash:
+	git branch <branch_name> <commit-hash>
 
 git branch delete: 
 	git checkout master

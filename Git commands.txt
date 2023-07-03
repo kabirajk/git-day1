@@ -11,6 +11,9 @@ to show the variables of git
 Create the branch using a commit hash:
 	git branch <branch_name> <commit-hash>
 
+Rename a file tracked by git
+git mv path/filename  path/newname
+
 git branch delete: 
 	git checkout master
 	git branch -d fun_feature

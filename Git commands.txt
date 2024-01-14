@@ -24,6 +24,9 @@ git Branch name change:
 	git push origin --delete bogfix
 	git push origin -u bugfix
  
+git undo last commit 
+	git reset --hard will not have the changes
+	git reset --soft HEAD~ // will have the changes as unstaged
 
 Local repo creation:
 	New:

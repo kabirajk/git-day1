@@ -1,3 +1,10 @@
+git log <to-branch>..<from-branch>:
+	shows commit diffs between two branches
+	# `HEAD` for current branhc
+	eg:
+	git log Alpha..master
+	git log Alpha..HEAD
+
 https://www.freecodecamp.org/news/git-cheat-sheet/
 setting user.name of local repo
 	git config --global user.name {username}
